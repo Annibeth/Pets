@@ -4,13 +4,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pets
+namespace Pet
 {
     class Specie
     {
-        public string name;
-        public int numberOfEys;
-        public int numberOfLegs;
+        private string name;
+        private int numberOfEys;
+        private int numberOfLegs;
+
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+        }
+        public int NumberOfEys
+        {
+            get
+            {
+                return numberOfEys;
+            }
+        }
+        public int NumberOfLegs
+        {
+            get
+            {
+                return numberOfLegs;
+            }
+        }
+
+
+
 
         public Specie(string name, int numberOfEys, int numberOfLegs)
         {

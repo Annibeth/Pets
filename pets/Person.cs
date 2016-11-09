@@ -4,15 +4,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pets
+namespace Pet
 {
     class Person
     {
-        public String name;
-        public int birthYear;
-        public Specie specieName;
+        private string name;
+        private int birthYear;
+        private Pet specieName;
 
-        public Person(String name, int birthYear, Specie specieName)
+        public string Name
+        {
+            get
+            {
+              return name;
+            }
+        }
+        public int BirthYear
+        {
+            get
+            {
+                return birthYear;
+            }
+        }
+        public Pet SpecieName
+        {
+            get
+            {
+                return specieName;
+            }
+        }
+
+
+        public Person(String name, int birthYear, Pet specieName)
         {
             this.name       = name;
             this.birthYear  = birthYear;
